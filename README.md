@@ -1,8 +1,7 @@
 # Gestor de tareas contenerizado
 
 ## Integrantes
-- [Nombre completo 1]
-- [Nombre completo 2]
+- Luisa Rossete
 
 ## Servicios
 | Servicio | Tecnología | Función |
@@ -16,8 +15,8 @@
 - Git
 
 ## Cómo ejecutarlo
-1. git clone [enlace de este repositorio]
-2. cd [nombre de la carpeta]
+1. git clone https://github.com/fernanda419/taller-docker.git
+2. cd [nombre de la carpeta] 
 3. Copy-Item .env.example .env
 4. docker compose up -d --build
 5. Abrir http://localhost:8080
