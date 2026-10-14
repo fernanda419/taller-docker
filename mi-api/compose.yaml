@@ -1,0 +1,25 @@
+services:
+  bd:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: Adso2026
+      MYSQL_DATABASE: tienda
+      MYSQL_USER: adso
+      MYSQL_PASSWORD: Adso2026
+    volumes:
+      - datos-bd:/var/lib/mysql
+
+  api:
+    build: .
+    ports:
+      - "8080:5000"
+    environment:
+      DB_HOST: bd
+      DB_USER: adso
+      DB_PASSWORD: Adso2026
+      DB_NAME: tienda
+    depends_on:
+      - bd
+
+volumes:
+  datos-bd:
